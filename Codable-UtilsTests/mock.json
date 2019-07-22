@@ -1,0 +1,57 @@
+{
+    "_id": "5d502c01cee911065704d8b4",
+    "index": 0,
+    "guid": "b8e85fc6-e89d-4fa4-b3f2-3a3edfa3eee9",
+    "isActive": true,
+    "balance": "$1,117.81",
+    "picture": "http://placehold.it/32x32",
+    "age": 26,
+    "eyeColor": "blue",
+    "name": {
+        "first": "Carissa",
+        "last": "Mcbride"
+    },
+    "company": "ISOTRONIC",
+    "email": "carissa.mcbride@isotronic.co.uk",
+    "phone": "+1 (997) 491-3570",
+    "address": "941 Scholes Street, Concho, Virgin Islands, 1300",
+    "about": "Qui anim excepteur commodo est sit. Pariatur sunt amet do occaecat eiusmod officia fugiat laboris. Consectetur anim reprehenderit dolor veniam pariatur ad tempor exercitation. Consequat aliquip esse in reprehenderit anim veniam cupidatat nulla. Excepteur exercitation elit incididunt esse.",
+    "registered": "Saturday, September 16, 2017 3:26 PM",
+    "latitude": "-7.308544",
+    "longitude": "-41.901236",
+    "tags": [
+        "pariatur",
+        "ipsum",
+        "amet",
+        "fugiat",
+        "tempor"
+    ],
+    "range": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    ],
+    "friends": [
+        {
+            "id": 0,
+            "name": "Constance Brock"
+        },
+        {
+            "id": 1,
+            "name": "Phillips Robinson"
+        },
+        {
+            "id": 2,
+            "name": "Smith Prince"
+        }
+    ],
+    "greeting": "Hello, Carissa! You have 7 unread messages.",
+    "favoriteFruit": "strawberry"
+}
