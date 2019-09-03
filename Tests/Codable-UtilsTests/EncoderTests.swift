@@ -10,11 +10,19 @@ import XCTest
 import Codable_Utils
 
 class EncoderTests: XCTestCase {
+    
+    static var allTests = [
+        ("testJSONStringEncoder", testJSONStringEncoder),
+        ("testJSONSerializationEncoder", testJSONSerializationEncoder),
+        ("testEncoderExtension", testEncoderExtension),
+        ("testEncodableDebugDescription", testEncodableDebugDescription)
+    ]
+    
     struct Article: Codable, CustomDebugStringConvertible {
         var name: String
     }
     let article = Article(name: "jaime")
-    
+
     func testJSONStringEncoder() throws {
         let encoder = JSONStringEncoder()
         let encodedArticle = try encoder.encode(article)

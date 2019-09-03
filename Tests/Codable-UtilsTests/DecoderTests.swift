@@ -10,10 +10,16 @@ import XCTest
 import Codable_Utils
 
 class DecoderTests: XCTestCase {
+    
+    static var allTests = [
+        ("testJSONStringDecoder", testJSONStringDecoder),
+        ("testJSONSerializationDecoder", testJSONSerializationDecoder),
+        ("testDecodeExtension", testDecodeExtension),
+    ]
+
     struct Article: Codable {
         var name: String
     }
-    
     let jsonString = "{\"name\":\"jaime\"}"
 
     func testJSONStringDecoder() throws {

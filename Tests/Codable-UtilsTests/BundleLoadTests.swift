@@ -28,6 +28,12 @@ struct Mock: Codable {
 }
 
 class BundleLoadTests: XCTestCase {
+    
+    static var allTests = [
+        ("testLoadFromBundle", testLoadFromBundle),
+    ]
+    
+    // Test Disable: Currently resources are not supported in SPM
     func testLoadFromBundle() throws {
         let fileName = "mock.json"
         let bundle = Bundle.init(for: BundleLoadTests.self)

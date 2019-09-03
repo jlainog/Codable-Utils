@@ -14,7 +14,7 @@ public extension Encodable {
     func encode() throws -> Data {
         let jsonEncoder = JSONEncoder()
         
-        if #available(iOS 11.0, *) {
+        if #available(iOS 11.0, OSX 10.13, *) {
             jsonEncoder.outputFormatting = [.prettyPrinted, .sortedKeys]
         } else {
           jsonEncoder.outputFormatting = .prettyPrinted

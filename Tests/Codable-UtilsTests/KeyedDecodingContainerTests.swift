@@ -10,6 +10,10 @@ import XCTest
 import Codable_Utils
 
 class KeyedDecodingContainerTests: XCTestCase {
+    static var allTests = [
+        ("testKeyedDecodingContainerDecode", testKeyedDecodingContainerDecode),
+    ]
+    
     struct Page: Decodable {
         var index: Int
         var title: String
@@ -27,7 +31,7 @@ class KeyedDecodingContainerTests: XCTestCase {
             content = try container.decodeIfPresent(.content)
         }
     }
-
+    
     func testKeyedDecodingContainerDecode() throws {
         let pageDictionary: [String : Any] =
             ["page": 10,

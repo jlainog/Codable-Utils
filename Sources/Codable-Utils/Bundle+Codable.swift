@@ -21,7 +21,7 @@ public extension Bundle {
     /// - Parameter filename: a name for the resource to be loaded
     func load(_ filename: String) throws -> Data {
         guard let file = url(forResource: filename, withExtension: nil) else {
-            throw RuntimeError("Couldn't find \(filename) in main bundle.")
+            throw RuntimeError("Couldn't find \(filename) in bundle.")
         }
         
         return try Data(contentsOf: file)

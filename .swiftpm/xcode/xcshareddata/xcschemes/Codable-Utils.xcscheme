@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C18956C722E57DBA00567F9C"
-               BuildableName = "Codable_Utils.framework"
+               BlueprintIdentifier = "Codable-Utils"
+               BuildableName = "Codable-Utils"
                BlueprintName = "Codable-Utils"
-               ReferencedContainer = "container:Codable-Utils.xcodeproj">
+               ReferencedContainer = "container:">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Codable-UtilsTests"
+               BuildableName = "Codable-UtilsTests"
+               BlueprintName = "Codable-UtilsTests"
+               ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,31 +40,24 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C18956D022E57DBB00567F9C"
-               BuildableName = "Codable-UtilsTests.xctest"
+               BlueprintIdentifier = "Codable-UtilsTests"
+               BuildableName = "Codable-UtilsTests"
                BlueprintName = "Codable-UtilsTests"
-               ReferencedContainer = "container:Codable-Utils.xcodeproj">
+               ReferencedContainer = "container:">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "BundleLoadTests/testLoadFromBundle()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C18956C722E57DBA00567F9C"
-            BuildableName = "Codable_Utils.framework"
-            BlueprintName = "Codable-Utils"
-            ReferencedContainer = "container:Codable-Utils.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -62,17 +69,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C18956C722E57DBA00567F9C"
-            BuildableName = "Codable_Utils.framework"
-            BlueprintName = "Codable-Utils"
-            ReferencedContainer = "container:Codable-Utils.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -83,10 +79,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C18956C722E57DBA00567F9C"
-            BuildableName = "Codable_Utils.framework"
+            BlueprintIdentifier = "Codable-Utils"
+            BuildableName = "Codable-Utils"
             BlueprintName = "Codable-Utils"
-            ReferencedContainer = "container:Codable-Utils.xcodeproj">
+            ReferencedContainer = "container:">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
