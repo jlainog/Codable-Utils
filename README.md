@@ -111,6 +111,30 @@ let page2 = try container.decode(.page) as Int
 let page3: Int = try container.decode(.page)
 ```
 
+#### Encoding/Decoding Dictionary using enum as a key
+```swift
+struct Photo: Codable {
+    enum URLKind: String, CodingKey {
+        case raw, full, regular, small, thumb
+    }
+    enum CodingKeys: String, CodingKey {
+        case urls
+    }
+    
+    let urls: [URLKind: String]
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        urls = try container.decodeDictionary(.urls)
+    }
+    
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encodeDictionary(urls, forKey: .urls)
+    }
+}
+```
+
 A default implementation for `CustomDebugStringConvertible` is added to `Encodable` types returning a JSON string representation by simple make the `Encodable` type to conform it.
 ```swift
 extension Article: CustomDebugStringConvertible {}
